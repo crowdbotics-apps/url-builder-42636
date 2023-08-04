@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { TextInput, Button, StyleSheet } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import React, { useState } from "react";
+import { TextInput, Button, StyleSheet } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const ScreenComponent = () => {
-  const [workOrder, setWorkOrder] = useState('');
-  const [model, setModel] = useState('');
+  const [workOrder, setWorkOrder] = useState("");
+  const [model, setModel] = useState("");
 
   const handleSubmit = () => {
-    const url = `https://example.com?workOrder=${workOrder}&model=${model}`; // Inject the url into your desired logic
+    const url = `https://xdot2.medxchange.com/Reporting/InventoryPullSheet.aspx?WON=${workOrder}&Model=${model}`; // Inject the url into your desired logic
 
     console.log(url);
   };
@@ -22,9 +22,9 @@ const ScreenComponent = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff'
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#fff"
   },
   input: {}
 });
